@@ -10,23 +10,20 @@ import UIKit
 class CategoryPickerViewController: UIViewController {
 
     @IBOutlet weak var animationView: UIView!
-    @IBOutlet weak var musicButton: CategoryButton!
-    @IBOutlet weak var movieButton: CategoryButton!
     @IBOutlet weak var bookButton: CategoryButton!
-    
-    let url1 = "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-    let url2 = "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-    let url3 = "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+    @IBOutlet weak var movieButton: CategoryButton!
+    @IBOutlet weak var musicButton: CategoryButton!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         setUIViews()
-        AnimationHelper.addLottieAnimation(animationName: "wiseMan", viewToAnimate: animationView)
-
         
     }
     
     private func setUIViews() {
+        AnimationHelper.addLottieAnimation(animationName: "wiseMan", viewToAnimate: animationView)
+        
         musicButton.buttonLabel.text = "Music"
         musicButton.tapAction = {
             print("music button basıldı")
@@ -41,10 +38,11 @@ class CategoryPickerViewController: UIViewController {
         bookButton.tapAction = {
             print("book button basıldı")
         }
+        
         DispatchQueue.main.async {
-            self.musicButton.backgroundImage.setImage(with: self.url1, width: 250, height: 40)
-            self.movieButton.backgroundImage.setImage(with: self.url2, width: 250, height: 40)
-            self.bookButton.backgroundImage.setImage(with: self.url3, width: 250, height: 40)
+            self.musicButton.backgroundImage.setImage(with: Constants.ButtonImages.Music.getRandImage(), width: 390, height: 150)
+            self.movieButton.backgroundImage.setImage(with: Constants.ButtonImages.Movie.getRandImage(), width: 390, height: 150)
+            self.bookButton.backgroundImage.setImage(with: Constants.ButtonImages.Book.getRandImage(), width: 390, height: 150)
         }
     }
     

@@ -15,6 +15,7 @@ extension UIImageView {
             return
         }
         
+        self.contentMode = .scaleAspectFill 
         let processor = DownsamplingImageProcessor(size: CGSize(width: width, height: height))
         kf.indicatorType = .activity
         kf.setImage(

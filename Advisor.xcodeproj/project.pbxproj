@@ -20,6 +20,7 @@
 		7B0C32882A93C1E600465819 /* CategoryButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B0C32872A93C1E600465819 /* CategoryButton.xib */; };
 		7B0C328B2A93CC1600465819 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7B0C328A2A93CC1600465819 /* Kingfisher */; };
 		7B0C328D2A93CC2300465819 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0C328C2A93CC2300465819 /* UIImageViewExtension.swift */; };
+		7B139E302A94F70600546572 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B139E2F2A94F70600546572 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		7B0C32852A93C1D700465819 /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
 		7B0C32872A93C1E600465819 /* CategoryButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryButton.xib; sourceTree = "<group>"; };
 		7B0C328C2A93CC2300465819 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		7B139E2F2A94F70600546572 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			children = (
 				7B0C32822A93BC0200465819 /* AnimationHelper.swift */,
 				7B0C328C2A93CC2300465819 /* UIImageViewExtension.swift */,
+				7B139E2F2A94F70600546572 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				7B0C32862A93C1D700465819 /* CategoryButton.swift in Sources */,
 				7B0C328D2A93CC2300465819 /* UIImageViewExtension.swift in Sources */,
 				7B0C327F2A93BB9B00465819 /* CategoryPickerViewController.swift in Sources */,
+				7B139E302A94F70600546572 /* Constants.swift in Sources */,
 				7B0C325E2A93B19B00465819 /* AppDelegate.swift in Sources */,
 				7B0C32602A93B19B00465819 /* SceneDelegate.swift in Sources */,
 			);

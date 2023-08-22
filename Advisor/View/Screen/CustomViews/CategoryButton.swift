@@ -45,7 +45,12 @@ class CategoryButton: UIView {
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        
+        backgroundImage.contentMode = .scaleAspectFill
+        backgroundImage.layer.cornerRadius = 20
+        contentView.layer.cornerRadius = 20
     }
+    
     
     private func addTapGesture() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(buttonTapped))

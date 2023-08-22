@@ -24,26 +24,34 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APT-5U-apy">
                     <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deneme" translatesAutoresizingMaskIntoConstraints="NO" id="gSp-8d-wqG">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deneme" translatesAutoresizingMaskIntoConstraints="NO" id="gSp-8d-wqG">
                             <rect key="frame" x="0.0" y="0.0" width="390" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="K9Q-ta-277"/>
+                                <constraint firstAttribute="width" constant="390" id="sdx-BF-qyV"/>
+                            </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label label hadşfsd şs dfşlsldk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWS-vb-x4p">
-                            <rect key="frame" x="20" y="60" width="350" height="30"/>
-                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="25"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWS-vb-x4p">
+                            <rect key="frame" x="10" y="58" width="370" height="34"/>
+                            <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="29"/>
                             <color key="textColor" name="baseColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="mWS-vb-x4p" secondAttribute="trailing" constant="20" id="259-5S-PGe"/>
-                        <constraint firstItem="gSp-8d-wqG" firstAttribute="top" secondItem="APT-5U-apy" secondAttribute="top" id="AGE-Mt-s1Z"/>
-                        <constraint firstItem="mWS-vb-x4p" firstAttribute="centerX" secondItem="APT-5U-apy" secondAttribute="centerX" id="I9H-Vw-XeU"/>
-                        <constraint firstAttribute="trailing" secondItem="gSp-8d-wqG" secondAttribute="trailing" id="L22-ze-YcI"/>
-                        <constraint firstItem="mWS-vb-x4p" firstAttribute="leading" secondItem="APT-5U-apy" secondAttribute="leading" constant="20" id="Sye-68-tsY"/>
-                        <constraint firstItem="gSp-8d-wqG" firstAttribute="leading" secondItem="APT-5U-apy" secondAttribute="leading" id="hmw-Wl-77U"/>
-                        <constraint firstAttribute="bottom" secondItem="gSp-8d-wqG" secondAttribute="bottom" id="uMi-4D-n6n"/>
-                        <constraint firstItem="mWS-vb-x4p" firstAttribute="centerY" secondItem="APT-5U-apy" secondAttribute="centerY" id="zop-fY-fd8"/>
+                        <constraint firstItem="mWS-vb-x4p" firstAttribute="centerX" secondItem="APT-5U-apy" secondAttribute="centerX" id="30n-gh-P03"/>
+                        <constraint firstAttribute="trailing" secondItem="mWS-vb-x4p" secondAttribute="trailing" constant="10" id="L9K-3b-kMz"/>
+                        <constraint firstAttribute="width" constant="390" id="WZq-b9-3Ll"/>
+                        <constraint firstItem="gSp-8d-wqG" firstAttribute="centerY" secondItem="APT-5U-apy" secondAttribute="centerY" id="WtV-g8-6Yx"/>
+                        <constraint firstItem="mWS-vb-x4p" firstAttribute="leading" secondItem="APT-5U-apy" secondAttribute="leading" constant="10" id="Ye9-t4-78M"/>
+                        <constraint firstItem="mWS-vb-x4p" firstAttribute="centerY" secondItem="gSp-8d-wqG" secondAttribute="centerY" id="bny-uR-lMs"/>
+                        <constraint firstAttribute="height" constant="150" id="egM-L0-YVs"/>
+                        <constraint firstItem="gSp-8d-wqG" firstAttribute="centerX" secondItem="APT-5U-apy" secondAttribute="centerX" id="f93-jK-zw9"/>
+                        <constraint firstItem="gSp-8d-wqG" firstAttribute="leading" secondItem="APT-5U-apy" secondAttribute="leading" id="fTE-Cs-4Ox"/>
+                        <constraint firstAttribute="bottom" secondItem="gSp-8d-wqG" secondAttribute="bottom" id="hoB-GT-ikO"/>
+                        <constraint firstAttribute="trailing" secondItem="gSp-8d-wqG" secondAttribute="trailing" id="rJL-Ke-yJM"/>
+                        <constraint firstItem="gSp-8d-wqG" firstAttribute="top" secondItem="APT-5U-apy" secondAttribute="top" id="xco-sQ-6Yz"/>
                     </constraints>
                 </view>
             </subviews>
@@ -56,13 +64,13 @@
                 <constraint firstItem="APT-5U-apy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ELJ-rK-WRw"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="132" y="-11"/>
+            <point key="canvasLocation" x="2802" y="-10"/>
         </view>
     </objects>
     <resources>
         <image name="deneme" width="600" height="600"/>
         <namedColor name="baseColor">
-            <color red="0.2901961207" green="0.2588235438" blue="0.61568629740000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.29019607843137257" green="0.25882352941176473" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
