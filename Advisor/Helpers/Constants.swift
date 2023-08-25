@@ -9,6 +9,23 @@ import Foundation
 
 enum Constants {
     enum ButtonImages {
+        static func getRandomImage(for type: ButtonType) -> String {
+            switch type {
+            case .music:
+                return Music.getRandImage()
+            case .book:
+                return Book.getRandImage()
+            case .movie:
+                return Movie.getRandImage()
+            }
+        }
+        
+        enum ButtonType: String {
+            case music = "Music"
+            case book = "Book"
+            case movie = "Movie"
+        }
+        
         enum Music {
             static func getRandImage() -> String {
                 let musics: [String] = ["https://studyworkgrow.com.au/wp-content/uploads/2021/03/Music-Therapist-JS-1024x576.png",
@@ -40,7 +57,7 @@ enum Constants {
                                          "https://www.pixelstalk.net/wp-content/uploads/2016/07/Free-1080p-Movie-HD-Pictures.jpg",
                                          "https://images7.alphacoders.com/404/404984.jpg",
                                          "https://images2.alphacoders.com/130/1308182.jpeg"
-                
+                                         
                 ]
                 return movies.randomElement()!
             }
