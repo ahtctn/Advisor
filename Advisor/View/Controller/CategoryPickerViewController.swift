@@ -44,8 +44,26 @@ class CategoryPickerViewController: UIViewController {
         button.tapAction = { [weak self] in
             guard let self = self else { return }
             self.categoryChoice = buttonType
-            self.animateUIElements()
+            self.navigateCategoryViewController()
         }
+        
+    }
+    
+    private func navigateCategoryViewController() {
+        let categoryViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CategoryViewController") as! CategoryViewController
+        switch categoryChoice {
+        case .music:
+            categoryViewController.questions = viewModel.getMusicQuestions()
+        case .book:
+            categoryViewController.questions = viewModel.getBookQuestions()
+        case .movie:
+            categoryViewController.questions = viewModel.getMovieQuestions()
+        case .none:
+            print("error")
+        }
+        
+        self.navigationController?.pushViewController(categoryViewController, animated: true)
+        
     }
     
     private func updateUI() {
